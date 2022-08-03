@@ -5,6 +5,8 @@
     var list4=[];
     let n=1;
     let x=0;
+    let button3 = document.querySelector("#button")
+    button3.addEventListener("click", AddRow)
 
     function AddRow(){
  var addRow=document.getElementById("show")
@@ -30,7 +32,7 @@
     //For removing data after pushinng the add button
     
     let inputs =document.querySelectorAll("input")
-    let button3 = document.querySelector("#button")
+    
     button3.addEventListener("click",()=>{
         inputs.forEach(input=>input.value = "")
     })
